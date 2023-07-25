@@ -42,17 +42,42 @@ public class UserInput : MonoBehaviour
         }
     }
 
-    public void SignIn()
+public void SignIn()
+{
+    UserExistsFunction();
+}
+
+public void UserExistsFunction()
+{
+    if (uint.TryParse(usernameKey, out uint userIdValue))
     {
-        UserExistsFunction();
+        userId = userIdValue;
+        Debug.Log("Exists: " + userId);
+    }
+    else
+    {
+        Debug.Log("Invalid userId input!");
+        return; 
+    }
+
+    var newUrl = url + "userExists?userid=" + userId;
+
+    StartCoroutine(GetRequest(newUrl, (response) =>
+    {
+        Debug.Log("User Exists Response: " + response);
+        if (response == "false")
+        {
+            isExists = false;
+        }
+        else
+        {
+            isExists = true;
+        }
+
+      
         if (isExists)
         {
-            string savedUsername = PlayerPrefs.GetString(usernameKey, "");
-            Debug.Log("correct");
-            audioSource.PlayOneShot(correctSound);
-            StartCoroutine(LoadNextSceneAfterDelay(1.5f, "AuthScene_2"));
-        
-            
+            SaveUsernameAndLoadNextScene();
         }
         else
         {
@@ -60,7 +85,8 @@ public class UserInput : MonoBehaviour
             usernameKey = "";
             audioSource.PlayOneShot(wrongSound);
         }
-    }
+    }));
+}
 
     public void SaveUsernameAndLoadNextScene()
     {
@@ -75,7 +101,9 @@ public class UserInput : MonoBehaviour
 
     public void SetUser()
     {
-        string savedUsername = PlayerPrefs.GetString(usernameKey, "");
+       string username = usernameKey;
+        PlayerPrefs.SetString("username", username);
+        PlayerPrefs.Save();
       
         Debug.Log("correct");
         audioSource.PlayOneShot(correctSound);
@@ -83,32 +111,7 @@ public class UserInput : MonoBehaviour
     
     }
 
-    public void UserExistsFunction()
-    {
-        if (uint.TryParse(usernameKey, out uint userIdValue))
-        {
-            userId = userIdValue;
-            Debug.Log("Exists: " + userId);
-        }
-        else
-        {
-            Debug.Log("Invalid userId input!");
-        }
-        var newUrl = url+ "userExists?userid=" + userId;
 
-        StartCoroutine(GetRequest(newUrl, (response) =>
-        {
-            Debug.Log("User Exists Response: " + response);
-            if (response == "false")
-            {
-                isExists = false;
-            }
-            else
-            {
-                isExists = true;
-            }
-        }));
-    }
 
     private IEnumerator GetRequest(string url, System.Action<string> onResponse)
     {
@@ -137,11 +140,3 @@ public class UserInput : MonoBehaviour
 
     
 }
-
-
-
-   
-
-
-
-   

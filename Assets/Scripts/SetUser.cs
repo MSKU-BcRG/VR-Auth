@@ -14,7 +14,15 @@ public class SetUser : MonoBehaviour
     {
         username = PlayerPrefs.GetString("username", "");
         Debug.Log("Welcome " + username + "!");
-
+    if (uint.TryParse(username, out uint userIdValue))
+        {
+            userId = userIdValue;
+            Debug.Log("UserId: " + userId + ", SymbolId: " + symbolId);
+        }
+        else
+        {
+            Debug.Log("Invalid userId or symbolId input!");
+        }
 
     }
 
@@ -24,15 +32,7 @@ public class SetUser : MonoBehaviour
         {
             var url = "http://127.0.0.1:8081/";
             var newUrl = url + "setSymbol?symbolid=" + symbolId + "&userid=" + userId;
-        if (uint.TryParse(username, out uint userIdValue))
-        {
-            userId = userIdValue;
-            Debug.Log("UserId: " + userId + ", SymbolId: " + symbolId);
-        }
-        else
-        {
-            Debug.Log("Invalid userId or symbolId input!");
-        }
+    
 
             StartCoroutine(GetRequest(newUrl, (response) =>
             {
@@ -46,6 +46,7 @@ public class SetUser : MonoBehaviour
 
     private IEnumerator GetRequest(string url, System.Action<string> onResponse)
     {
+        Debug.Log(url);
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
             yield return webRequest.SendWebRequest();

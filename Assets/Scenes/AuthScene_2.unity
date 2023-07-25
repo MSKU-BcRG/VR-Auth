@@ -333,8 +333,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1407635861}
-        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
-        m_MethodName: CancelInvoke
+        m_TargetAssemblyTypeName: SignIn, Assembly-CSharp
+        m_MethodName: firstButtonFunction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1307,9 +1307,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1d36d69e9714d68b35f155a0d8c483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  symbolPhotoId: 
   symbolId: 0
   userId: 0
+  username: 
 --- !u!4 &1407635862
 Transform:
   m_ObjectHideFlags: 0

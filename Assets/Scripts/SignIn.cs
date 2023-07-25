@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 public class SignIn : MonoBehaviour
 {
     public uint symbolId = 1;
-    public uint userId;
+    public uint userId ;
     private bool isButtonClicked = false;
     public string username;
 
@@ -16,16 +16,7 @@ public class SignIn : MonoBehaviour
         string username = PlayerPrefs.GetString("username", "");
         Debug.Log("Welcome " + username + "!");
 
-
-    }
-
-    private void Update()
-    {
-        if (isButtonClicked)
-        {
-            var url = "http://127.0.0.1:8081/";
-            var newUrl = url + "checkSymbol?symbolid=" + symbolId + "&userid=" + userId;
-        if (uint.TryParse(username, out uint userIdValue))
+       if (uint.TryParse(username, out uint userIdValue))
         {
             userId = userIdValue;
             Debug.Log("UserId: " + userId + ", SymbolId: " + symbolId);
@@ -34,7 +25,20 @@ public class SignIn : MonoBehaviour
         {
             Debug.Log("Invalid userId or symbolId input!");
         }
+        
+    }
 
+    private void Update()
+    {
+        
+        if (isButtonClicked)
+        {
+            
+            var url = "http://127.0.0.1:8081/";
+        
+ 
+        
+           var newUrl = url + "checkSymbol?symbolid=" + symbolId + "&userid=" + userId;
             StartCoroutine(GetRequest(newUrl, (response) =>
             {
                 Debug.Log("Check Symbol Response: " + response);
@@ -76,6 +80,7 @@ public class SignIn : MonoBehaviour
     {
         symbolId = 1;
         isButtonClicked = true;
+        
     }
 
     public void secondButtonFunction()
