@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fileFormatVersion: 2
 guid: fbee67e09f48e4652bfa085460c895c7
 PackageManifestImporter:
@@ -5,3 +6,12 @@ PackageManifestImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+fileFormatVersion: 2
+guid: fbee67e09f48e4652bfa085460c895c7
+PackageManifestImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24

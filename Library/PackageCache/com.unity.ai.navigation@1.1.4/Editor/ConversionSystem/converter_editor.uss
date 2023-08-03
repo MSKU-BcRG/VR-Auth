@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 .convertersListView {
     --unity-item-height: 16;
     height: 120px;
 }
+=======
+.convertersListView {
+    --unity-item-height: 16;
+    height: 120px;
+}
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 {
   "displayName": "Tunneling Vignette",
   "description": "Assets to let users set up and configure tunneling vignette effects as a comfort mode option."
 } 
+=======
+{
+  "displayName": "Tunneling Vignette",
+  "description": "Assets to let users set up and configure tunneling vignette effects as a comfort mode option."
+} 
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24

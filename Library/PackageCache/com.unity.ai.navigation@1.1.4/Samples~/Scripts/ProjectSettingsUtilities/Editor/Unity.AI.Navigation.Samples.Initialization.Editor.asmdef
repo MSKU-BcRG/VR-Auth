@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "Unity.AI.Navigation.Samples.Initialization.Editor",
     "rootNamespace": "",
@@ -13,4 +14,21 @@
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
+=======
+{
+    "name": "Unity.AI.Navigation.Samples.Initialization.Editor",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24
 }

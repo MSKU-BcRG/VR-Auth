@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "Unity.XR.Oculus",
     "references": [
@@ -25,4 +26,33 @@
         }
     ],
     "noEngineReferences": false
+=======
+{
+    "name": "Unity.XR.Oculus",
+    "references": [
+        "Unity.XR.Management",
+        "Unity.ugui",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "",
+            "define": "UNITY_INPUT_SYSTEM"
+        },
+        {
+            "name": "com.unity.xr.management",
+            "expression": "3.2.0",
+            "define": "XR_MGMT_GTE_320"
+        }
+    ],
+    "noEngineReferences": false
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "Unity.AI.Navigation.Samples",
     "rootNamespace": "",
@@ -14,4 +15,22 @@
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
+=======
+{
+    "name": "Unity.AI.Navigation.Samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8c4dd21966739024fbd72155091d199e",
+        "GUID:1dcde1c83efa6e14e8e75ed67addeba3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24
 }

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 {
   "displayName": "XR Device Simulator",
   "description": "Assets related to the simulation of XR HMD and controllers."
 } 
+=======
+{
+  "displayName": "XR Device Simulator",
+  "description": "Assets related to the simulation of XR HMD and controllers."
+} 
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24

@@ -64,6 +64,7 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.2.1",
       "depth": 0,
@@ -71,6 +72,8 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24
     "com.unity.test-framework": {
       "version": "1.1.33",
       "depth": 0,

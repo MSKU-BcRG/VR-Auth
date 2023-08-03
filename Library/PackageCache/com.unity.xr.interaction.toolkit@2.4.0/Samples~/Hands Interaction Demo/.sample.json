@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 {
   "displayName": "Hands Interaction Demo",
   "description": "Sample scene and other assets for hand-tracking integration with the XR Interaction Toolkit."
 } 
+=======
+{
+  "displayName": "Hands Interaction Demo",
+  "description": "Sample scene and other assets for hand-tracking integration with the XR Interaction Toolkit."
+} 
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24

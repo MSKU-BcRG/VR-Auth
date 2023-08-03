@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "Unity.AI.Navigation.Editor",
     "rootNamespace": "",
@@ -16,4 +17,24 @@
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
+=======
+{
+    "name": "Unity.AI.Navigation.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8c4dd21966739024fbd72155091d199e",
+        "GUID:c57630adab7a340ec94f10e4fcac12f1"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24
 }

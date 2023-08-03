@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "Unity.XR.Interaction.Toolkit.Samples.Hands.Editor",
     "rootNamespace": "",
@@ -16,4 +17,24 @@
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
+=======
+{
+    "name": "Unity.XR.Interaction.Toolkit.Samples.Hands.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Unity.XR.CoreUtils",
+        "Unity.XR.CoreUtils.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24
 }

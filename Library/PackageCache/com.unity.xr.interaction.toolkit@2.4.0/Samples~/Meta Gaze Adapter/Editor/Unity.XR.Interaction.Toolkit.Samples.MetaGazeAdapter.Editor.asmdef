@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "Unity.XR.Interaction.Toolkit.Samples.MetaGazeAdapter.Editor",
     "rootNamespace": "",
@@ -16,4 +17,24 @@
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
+=======
+{
+    "name": "Unity.XR.Interaction.Toolkit.Samples.MetaGazeAdapter.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:dc960734dc080426fa6612f1c5fe95f3",
+        "GUID:4ddd23ea56a3a40f0aa0036d1624a53e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24
 }

@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 {
   "displayName": "Build And Connect NavMesh Surfaces",
   "description": "A set of examples on how to build and use a dynamic navigation space made of NavMesh surfaces and segment-to-segment connections.",
   "createSeparatePackage": false
 }
+=======
+{
+  "displayName": "Build And Connect NavMesh Surfaces",
+  "description": "A set of examples on how to build and use a dynamic navigation space made of NavMesh surfaces and segment-to-segment connections.",
+  "createSeparatePackage": false
+}
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24

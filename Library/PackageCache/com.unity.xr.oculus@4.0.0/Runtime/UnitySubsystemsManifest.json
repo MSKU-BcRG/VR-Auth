@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "OculusXRPlugin",
   "version": "1.0.0-preview",
@@ -16,3 +17,23 @@
     }
   ]
 }
+=======
+{
+  "name": "OculusXRPlugin",
+  "version": "1.0.0-preview",
+  "libraryName": "OculusXRPlugin",
+
+  "displays": [
+    {
+      "id": "oculus display",
+      "disablesLegacyVr" : true,
+      "supportedMirrorBlitReservedModes" : ["leftEye","rightEye", "sideBySide","occlusionMesh"]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "oculus input"
+    }
+  ]
+}
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24

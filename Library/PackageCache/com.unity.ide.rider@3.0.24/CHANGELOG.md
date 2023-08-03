@@ -3,7 +3,11 @@
 
 ## [3.0.24] - 2023-06-09
 
+<<<<<<< HEAD
  - fix [RIDER-91705](https://youtrack.jetbrains.com/issue/RIDER-91705). Improve UnitTesting support
+=======
+ - fix [RIDER-91705](https://youtrack.jetbrains.com/issue/RIDER-91705). Improve UnitTesting support
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24
  - support JetBrains Toolbox App 2.0
 
 

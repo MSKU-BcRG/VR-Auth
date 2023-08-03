@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 system: jira
 server: jira.unity3d.com
 project: XRLIH
 issuetype: Bug
+=======
+system: jira
+server: jira.unity3d.com
+project: XRLIH
+issuetype: Bug
+>>>>>>> 5386830ea95ecb9f6ce72cd172faa6cc6f38de24
